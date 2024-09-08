@@ -1,0 +1,23 @@
+@import "@angular/material/prebuilt-themes/cyan-orange.css";
+.header{
+    margin: 10px;
+    padding: 10px;
+    align-items: center;
+    display: block;
+    text-align: center;
+}
+
+.imagem{
+    width: 100px; /* Largura 100 pixels*/
+    height: auto; /* Altura ajustada automaticamente */
+    margin: 10px auto; /* Margem de 10 pixels em todos os lados */
+    display: block;
+}
+.div-image{
+    float: left;
+    align-items: center;
+    width: 50px;
+    height: auto;
+    margin: 10px auto;
+    padding: 10px;
+}

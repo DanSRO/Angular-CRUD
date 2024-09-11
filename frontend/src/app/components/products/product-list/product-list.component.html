@@ -1,1 +1,9 @@
-<p>product-list works!</p>
+<h1>Product List</h1>
+<a routerLink="/product/create">Create Product</a>
+<ul>
+    <li *ngFor="let product of products">
+        {{product.name}} - {{ product.price | currency }}
+        <a [routerLink]="['/product/edit/', product.id]">Edit</a>
+        <button (click)="deleteProduct(product.id)">Delete</button>
+    </li>
+</ul>

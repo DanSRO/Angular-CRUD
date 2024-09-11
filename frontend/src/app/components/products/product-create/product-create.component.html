@@ -1,2 +1,8 @@
-<p [id]="atributo">product-create works!</p>
-<button (click)="fazAlgo()">Fazer algo</button>
+<h1>Create Product</h1>
+<form (ngSubmit)="createProduct()">
+    <label for="name">Name: </label>
+    <input id="name" [(ngModel)]="product.name" name="name" required>
+    <label for="price">Price: </label>
+    <input [(ngModel)]="product.price" name="price" id="price" required>
+    <button type="submit">Create</button>
+</form>

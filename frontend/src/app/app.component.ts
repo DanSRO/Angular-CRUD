@@ -10,6 +10,8 @@ import { MatListModule } from '@angular/material/list';
 import { MatCardModule } from '@angular/material/card';
 import { RouterModule } from '@angular/router';
 import { ProductCreateComponent } from './components/products/product-create/product-create.component';
+import { FormsModule } from '@angular/forms';
+import { ProductListComponent } from './components/products/product-list/product-list.component';
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -24,7 +26,9 @@ import { ProductCreateComponent } from './components/products/product-create/pro
     HomeComponent,
     MatCardModule, 
     RouterModule,
-    ProductCreateComponent
+    ProductCreateComponent,
+    FormsModule, 
+    ProductListComponent
   ],
   template: `
     <h1>Bem-vindo ao projeto {{title}}!</h1>
